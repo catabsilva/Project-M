@@ -1,12 +1,81 @@
-body{
-    background-color: black;
-    font-family:'Arial Narrow Bold', sans-serif;
-    color: white;
-    text-decoration: none;}
-    
-h1{
-    color: red;
-    text-align: center;}  
+@charset "UTF-8";
+@font-face {
+    font-family: 'marvel2';
+    src: url(fontes/marvel2.otf);}
 
-h2{
-    color: white;}
+@font-face {
+    font-family: 'marvel1';
+    src: url(fontes/marvel1.ttf);}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;}
+
+:root {
+    --cor01:#FC2238;
+    --cor02:#CD0316;
+    --cor03:#7B0101;
+    --cor04:#630000;}
+
+body{ 
+    background-color: black;}
+
+header { 
+    background-image: radial-gradient(circle, var(--cor02) , var(--cor03));}
+
+header > h1{
+    font-family: 'marvel2';
+    text-transform: uppercase;
+    font-size: 7em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    padding-top: 30px;}   
+    
+header > h2{ 
+    font-family: 'marvel2';
+    font-variant: small-caps;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+    margin-bottom: 50px;}  
+
+main > ul {
+    text-align: center;}
+
+main > ul > li {
+    display: inline;
+    background-color: var(--cor04);
+    margin: 40px;
+    padding: 15px;
+    border-radius: 15px;}
+
+main > ul > li > a {
+    font-family: 'marvel2';
+    color:black;
+    font-size: 1.3em;
+    padding: 15px;}
+
+main > ul > li:hover {
+    background-color: var(--cor02);}
+
+main > ul > li > a:hover {
+    font-family: 'marvel1';
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.5em;}
+
+main > img {
+    display: block;
+    width: 800px;
+    margin: 50px auto 50px auto;}
+
+footer > p {
+    color: var(--cor04);
+    margin: 15px;
+    padding-left: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
