@@ -113,7 +113,6 @@ main > a > img {
 footer > p {
     color: var(--cor04);
     margin: 15px;
-    padding-left: 50px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;}
 
