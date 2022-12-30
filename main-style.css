@@ -94,14 +94,16 @@ main > menu > ul > li > a {
 
 main > menu > ul > li:hover {
     background-color: var(--cor04);
-    font-size: larger;}
+    width: 200px;
+    height: 38.4px;}
 
 main > menu > ul > li > a:hover {
-    display: inline-block;
+    display: block;
     font-family: 'marvel1';
     color: white;
     font-variant: small-caps;
-    font-size: 1.3em;}
+    font-size: 1.4em;
+    line-height: 2em;}
 
 main > a > img {
     display: block;
