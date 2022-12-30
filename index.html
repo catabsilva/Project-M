@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main-style.css" media="all">
     <link rel="stylesheet" href="style.css" media="screen and (min-width:600px)">
     <title>Marvelland - Homepage</title>
+    
 </head>
 <body>
     <header>
@@ -15,10 +16,10 @@
         <h2>Everything you want to know about Marvel</h2>
     </header>
     <main>
-        <menu>
-            <span class="material-symbols-outlined">
-                menu
-                </span>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
             <ul>
                 <li><a href="movies.html">Movies/Series</a></li>
                 <li><a href="comics.html">Comics</a></li>
@@ -40,6 +41,12 @@
             <source src="musica/marvel.wav" type="audio/wav">
         </audio> 
     </footer>
- 
+    <script>
+        function clickMenu() {
+            if (itens.style.display=='block'){
+                itens.style.display='none'}
+            else {itens.style.display='block'}
+        }
+    </script>   
 </body>
 </html>
