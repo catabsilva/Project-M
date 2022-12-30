@@ -111,6 +111,8 @@ main > a > img {
     margin: 10px auto 20px auto;}
 
 footer > p {
+    display: block;
+    margin: auto;
     color: var(--cor04);
     margin: 15px;
     text-align: center;
