@@ -19,17 +19,20 @@
 
 header > h1{
     font-size: 6em;
-    font-weight: 900;
+    font-weight: 400;
     padding-top: 20px;}   
 
 header > a#inicio {
     font-size: 6em;
-    font-weight: 900;}
+    font-weight: 400;}
 
 header > h2{ 
     font-size: 2em;
     padding-bottom: 30px;
     margin-bottom: 50px;}  
+
+span{
+    display: none;}
 
 main > menu > ul {
     text-align: center;

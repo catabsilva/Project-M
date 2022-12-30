@@ -24,10 +24,10 @@ header {
     background-image: radial-gradient(circle, var(--cor02) , var(--cor03));}
 
 header > h1{
-    font-family: 'marvel2';
+    font-family: 'marvel1';
     text-transform: uppercase;
     font-size: 4em;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
     color: white;
     padding-top: 10px;
@@ -41,10 +41,10 @@ header > a#inicio {
     display: block;
     margin: 0px;
     padding: 0px;
-    font-family: 'marvel2';
+    font-family: 'marvel1';
     text-transform: uppercase;
     font-size: 4em;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
     color: white;
     text-shadow: 3px 3px 7px #630000;}
@@ -60,36 +60,35 @@ header > h2{
     margin-bottom: 20px;}  
 
 main > menu > ul {
+ 
     text-align: center;
-    margin-top: 0px;
+    margin-top: 2px;
     padding-top: 0px;}
 
 main > menu > ul > li {
-    display: inline-block;
+    display: block;
     background-color: var(--cor02);
-    margin: 8px;
-    padding: 10px;
-    border-radius: 5px;
-    width: 150px;} 
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 3px;
+    width: 200px;
+    height: 28px;} 
 
 main > menu > ul > li > a {
     font-family: 'marvel2';
     color:black;
-    font-size: 1.3em;
-    
-    padding: 15px;}
+    font-size: 1.3em;}
 
 main > menu > ul > li:hover {
     background-color: var(--cor04);
-    width: 170px;
-    font-size: larger;
-    transform: translate(-5px, -5px);}
+    font-size: larger;}
 
 main > menu > ul > li > a:hover {
+    display: inline-block;
     font-family: 'marvel1';
     color: white;
     font-variant: small-caps;
-    font-size: 1.5em;}
+    font-size: 1.3em;}
 
 main > a > img {
     display: block;
@@ -103,3 +102,11 @@ footer > p {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;}
 
+span {
+    display: block;
+    width: 100vw;
+    background-color: var(--cor02);
+    color: black;
+    text-align: center;
+    margin: auto;
+ }
