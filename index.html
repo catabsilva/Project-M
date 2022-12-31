@@ -10,7 +10,7 @@
     <title>Marvelland - Homepage</title>
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Marvelland</h1>
         <h2>Everything you want to know about Marvel</h2>
@@ -34,14 +34,22 @@
         <a href="https://www.youtube.com/watch?v=OYhFFQl4fLs" target="_blank"><img src="imagens/guardians-galaxy-christmas-special.jpg" alt="Poster Guardians of the Galaxy Holiday Special"></a>
     </main>
     <footer>
-        <p>Last Update: 30/12/2022</p>
-        <audio preload="metadata" autoplay>
+        <!--<audio preload="metadata" autoplay controls>
             <source src="musica/marvel.mp3" type="audio/mpeg">
             <source src="musica/marvel.ogg" type="audio/ogg">
             <source src="musica/marvel.wav" type="audio/wav">
-        </audio> 
+        </audio> -->
+        <p>Last Update: 31/12/2022</p>
+        <a href="subscribe.html">Subscribe</a>
+        
     </footer>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >=600) {
+                itens.style.display = 'block'}
+            else {itens.style.display = 'none'}
+        }
+
         function clickMenu() {
             if (itens.style.display=='block'){
                 itens.style.display='none'}
