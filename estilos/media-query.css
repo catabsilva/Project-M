@@ -24,14 +24,16 @@ header > h1{
 
 header > a#inicio {
     font-size: 6em;
-    font-weight: 400;}
+    font-weight: 400;
+    padding-top: 20px;}
 
 header > h2{ 
     font-size: 2em;
-    padding-bottom: 30px;
-    margin-bottom: 50px;}  
+    margin-top: -10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;}  
 
-#burger{
+span#burger{
     display: none;}
 
 main > menu > ul {
@@ -44,35 +46,43 @@ main > menu > ul > li {
     background-color: var(--cor02);
     margin: 8px;
     padding: 10px;
-    border-radius: 5px;
-    width: 150px;} 
+    border-radius: 3px;
+    width: 130px;
+    height: 25px;} 
 
 main > menu > ul > li > a {
     font-family: 'marvel2';
     color:black;
     font-size: 1.3em;
-    
-    padding: 15px;}
+    line-height: 1.25em;
+    padding: 0px 19px;}
+
+main > menu > ul > li > a.small {
+    padding: 0px 45px;}
+
+main > menu > ul > li > a#small {
+    padding: 0px 26px;}
 
 main > menu > ul > li:hover {
     background-color: var(--cor04);
-    width: 170px;
-    font-size: larger;
-    transform: translate(-5px, -5px);}
+    width: 135px;
+    height: 27px;
+    transform: translate(-1px, -1px);}
 
 main > menu > ul > li > a:hover {
-    font-family: 'marvel1';
-    color: white;
-    font-variant: small-caps;
-    font-size: 1.5em;}
+    font-size: 1.5em;
+    line-height: 1.2em;}
 
 main > a > img {
     width: 80%;}
 
-footer > p {
-    color: var(--cor04);
-    margin: 15px;
-    padding-left: 50px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+footer {
+    width: 90vw;
+    margin: auto;}   
 
+@media screen and (min-width:600px) (max-width:1310px){
+    span#quebra {
+        ::content: }
+    
+        main > a > img {
+            width: 50%;}}

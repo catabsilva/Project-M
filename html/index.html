@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/main-style.css" media="all">
-    <link rel="stylesheet" href="estilos/media-query.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="../estilos/main-style.css" media="all">
+    <link rel="stylesheet" href="../estilos/media-query.css" media="screen and (min-width:600px)">
     <title>Marvelland - Homepage</title>
     
 </head>
@@ -21,18 +21,18 @@
             </span>
         <menu id="itens">
             <ul>
-                <li><a id="small" href="html/movies.html">Movies/Series</a></li>
-                <li><a class="small" href="html/comics.html">Comics</a></li>
-                <li><a class="small" href="html/games.html">Games</a></li>
+                <li><a id="small" href="movies.html">Movies/Series</a></li>
+                <li><a class="small" href="comics.html">Comics</a></li>
+                <li><a class="small" href="games.html">Games</a></li>
                 <span id="quebra"></span>
-                <li><a href="html/history.html">Marvel History</a></li>
-                <li><a href="html/merchandising.html">Merchandising</a></li>
-                <li><a href="html/social-media.html">Social Media</a></li>
+                <li><a href="history.html">Marvel History</a></li>
+                <li><a href="merchandising.html">Merchandising</a></li>
+                <li><a href="social-media.html">Social Media</a></li>
             </ul>
         </menu>
-        <a href="https://www.youtube.com/watch?v=u3V5KDHRQvk" target="_blank"><img src="imagens/guardians-galaxy-vol-3.jpg" alt="Poster Guardians of the Galaxy Vol 3"></a>
-        <a href="https://www.youtube.com/watch?v=_Z3QKkl1WyM" target="_blank"><img src="imagens/wakanda-forever.jpg" alt="Poster Wakanda Forever"></a>
-        <a href="https://www.youtube.com/watch?v=OYhFFQl4fLs" target="_blank"><img src="imagens/guardians-galaxy-christmas-special.jpg" alt="Poster Guardians of the Galaxy Holiday Special"></a>
+        <a href="https://www.youtube.com/watch?v=u3V5KDHRQvk" target="_blank"><img src="../imagens/guardians-galaxy-vol-3.jpg" alt="Poster Guardians of the Galaxy Vol 3"></a>
+        <a href="https://www.youtube.com/watch?v=_Z3QKkl1WyM" target="_blank"><img src="../imagens/wakanda-forever.jpg" alt="Poster Wakanda Forever"></a>
+        <a href="https://www.youtube.com/watch?v=OYhFFQl4fLs" target="_blank"><img src="../imagens/guardians-galaxy-christmas-special.jpg" alt="Poster Guardians of the Galaxy Holiday Special"></a>
     </main>
     <footer>
         <!--<audio preload="metadata" autoplay controls>
@@ -41,19 +41,21 @@
             <source src="musica/marvel.wav" type="audio/wav">
         </audio> -->
         <p>Last Update: 31/12/2022</p>
-        <a href="html/subscribe.html">Subscribe</a>
+        <a href="subscribe.html">Subscribe</a>
         
     </footer>
     <script>
         function mudouTamanho() {
-            if (window.innerWidth >=599) {
+            if (window.innerWidth >=600) {
                 itens.style.display = 'block'}
-            else {itens.style.display = 'none'}}
+            else {itens.style.display = 'none'}
+        }
 
         function clickMenu() {
             if (itens.style.display=='block'){
                 itens.style.display='none'}
-            else {itens.style.display='block'}}
+            else {itens.style.display='block'}
+        }
     </script>   
 </body>
 </html>
